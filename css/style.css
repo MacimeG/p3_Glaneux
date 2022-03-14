@@ -1,4 +1,49 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Ici contient mon HEADER
+j'y rajoute du style avec les propriétés font, et texte-align  */
+
 .logo-header{
     width: 210px;
-    padding-left: 90px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.recherche_ville{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    background-color: #ebebeb;
+    box-shadow: -6px 25px 18px -19px rgba(100,99,99,0.75) inset;
+    
+}
+.recherche_ville .--texte{
+    font-weight: 600;
+}
+.icon{
+    padding-right: 15px;
+}
+
+.recherche_restau .--texte{
+    font-size: x-large; 
+    font-weight: bold;
+    text-align: center;
+}
+.recherche_restau .bouton{
+    display: flex;
+    justify-content: center;
+}
+.recherche_restau .--sousTexte{
+    text-align: center;
+    font-size: larger;
+}
+
+.fonctionnement .--texte{
+    font-size: x-large; 
+    font-weight: bold;
 }
