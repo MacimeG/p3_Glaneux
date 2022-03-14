@@ -18,25 +18,46 @@ j'y rajoute du style avec les propriétés font, et texte-align  */
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
-    background-color: #ebebeb;
-    box-shadow: -6px 25px 18px -19px rgba(100,99,99,0.75) inset;
+    background-color: #f1efef;
+    box-shadow: -6px 20px 18px -19px rgba(100,99,99,0.75) inset;
     
 }
 .recherche_ville .--texte{
     font-weight: 600;
+    color: #454545;
 }
-.icon{
+.recherche_ville .icon{
     padding-right: 15px;
+    color: #454545;
+}
+.recherche_restau{
+    background: linear-gradient(182deg,#fdfdfd 0%, #e6e6e6 70%);
+    padding-bottom: 60px;
 }
 
+/* J'ai centrer le texte comme sur la maquette en ajouter la propriéte width:60% ainsi que la propriété margin: auto, pour pouvoir le centrer automatiquement */
 .recherche_restau .--texte{
     font-size: x-large; 
     font-weight: bold;
     text-align: center;
+    width: 60%;
+    margin: auto;
+    padding-top: 35px;
 }
-.recherche_restau .bouton{
+.recherche_restau .--bouton{
     display: flex;
     justify-content: center;
+}
+/* J'ai mis une taille et hauteur fixe en pixel sur le bouton
+avec son style */
+.--bouton button{
+    border: none;
+    color: white;
+    border-radius: 25px;
+    width: 240px;
+    font-size: large;
+    height: 50px;
+    background: linear-gradient(0deg,#9356dc 0%, #ff79da 70%);
 }
 .recherche_restau .--sousTexte{
     text-align: center;
@@ -46,4 +67,15 @@ j'y rajoute du style avec les propriétés font, et texte-align  */
 .fonctionnement .--texte{
     font-size: x-large; 
     font-weight: bold;
+}
+
+
+/* LE MAIN */
+
+/* ET POUR COMMENCER, LA SECTION FONCTIONNEMENT */
+
+.fonctionnement button{
+    width: 280px;
+    height: 50px;
+    border-radius: 15px;
 }
