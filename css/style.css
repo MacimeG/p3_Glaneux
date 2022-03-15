@@ -94,36 +94,119 @@ avec son style */
 /* ICI LA SECTION RESTAURANT ET CES CARD */
 .restaurant{
     background-color: #f1f1f1;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 .restaurant .--texte{
     font-size: x-large; 
     font-weight: bold;
+    padding-left: 30px;
 }
 
-/* ici je donne une taille en pixell au card directement */
+/* ici je donne une taille en pixell au card directement
+j'ai remplacer les pixel par le % pour que responsivement, sa se comporte mieux. */
 .restaurant-card{
-    width: 350px;
+    /* width: 350px; */
+    width: 85%;
     background-color: white;
     margin: auto;
+    border-radius: 15px;
+    height: 260px;
+    margin-bottom: 20px;
 }
 
 /* les images des card prenne 100% de la largueur de la card, et ce couvre la card grace a la propriété background-size: cover */
 .img_main{
     background-size: cover;
     width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: calc(100% - 75px);
+    object-fit: cover;
 }
 .restaurant-name{
     font-size: larger;
     font-weight: bolder;
     margin: 0px;
     padding-top: 10px;
+    padding-left: 10px;
 }
 .restaurant-lieu{
     margin: 0px;
     padding-top: 8px;
+    padding-left: 10px;
 }
 .icon-heart{
+    float: right;
+    padding-right: 25px;
+}
+.nouveaute{
+    z-index: 2;
     position: absolute;
-    left: 75%;
-    top: 116.8%;
+    border: 1px solid transparent;
+    /* margin-left: 240px; */
+    margin-left: 57%;
+    background-color: #99E2D0;
+    color: #11745c;
+    padding: 6px;
+    border-radius: 3px;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* ici Le FOOTER */
+/* .logo-footer{
+    width: 110px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+} */
+.--title{
+    font-family: 'Shrikhand', cursive;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-propose{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
+    color: white;
+}
+.footer-propose p{
+    padding-left: 20px;
+}
+.footer-propose i{
+    padding-left: 20px;
+}
+
+
+/* .footer-partenaire{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.footer-partenaire p{
+    padding-left: 20px;
+    margin: 0;
+}
+.footer-partenaire i{
+    padding-left: 20px;
+} */
+footer{
+    background-color: #424141;
+    padding-bottom: 25px;
+}
+footer p{
+    padding-left: 15px;
+    margin: 0;
+    /* padding-bottom: 7px; */
+    color: white;
+    margin-bottom: 8px;
 }
