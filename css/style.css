@@ -141,10 +141,12 @@ avec son style */
     padding-top: 20px;
     padding-bottom: 30px;
 }
+/* ici je met le padding en % pour avoir le meme espace entre le bord et le commencement des card et tu titre restaurant, et que se soit responsive */
 .restaurant .--texte{
     font-size: x-large; 
     font-weight: bold;
-    padding-left: 30px;
+    /* padding-left: 30px; */
+    padding-left: 7%;
 }
 
 /* ici je donne une taille en pixell au card directement
@@ -191,7 +193,7 @@ un peu de padding pour bien placé l'element avec aussi du margin en %, pour le 
     position: absolute;
     border: 1px solid transparent;
     /* margin-left: 240px; */
-    margin-left: 57%;
+    /* margin-left: 57%; */
     background-color: #99E2D0;
     color: #11745c;
     padding: 6px;
@@ -199,6 +201,7 @@ un peu de padding pour bien placé l'element avec aussi du margin en %, pour le 
     font-weight: 600;
     padding-left: 15px;
     padding-right: 15px;
+    right: 10%;
 }
 
 /* ici Le FOOTER */
@@ -206,7 +209,7 @@ un peu de padding pour bien placé l'element avec aussi du margin en %, pour le 
 .--title{
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -221,9 +224,9 @@ un peu de padding pour bien placé l'element avec aussi du margin en %, pour le 
 .footer-propose p{
     padding-left: 20px;
 }
-.footer-propose i{
+/* .footer-propose i{
     padding-left: 20px;
-}
+} */
 
 
 /* .footer-partenaire{
@@ -241,11 +244,12 @@ un peu de padding pour bien placé l'element avec aussi du margin en %, pour le 
     padding-left: 20px;
 } */
 footer{
-    background-color: #424141;
+    background-color: #353535;
     padding-bottom: 25px;
+    padding-left: 7%;
 }
 footer p{
-    padding-left: 15px;
+    /* padding-left: 15px; */
     margin: 0;
     color: white;
     margin-bottom: 8px;
