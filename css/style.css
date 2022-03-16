@@ -57,9 +57,10 @@ avec son style */
     color: white;
     border-radius: 25px;
     width: 240px;
-    font-size: large;
+    font-size: 17px;
     height: 50px;
-    background: linear-gradient(0deg,#9356dc 0%, #ff79da 70%);
+    box-shadow: 5px 6px 15px -2px rgba(0,0,0,0.26);
+    background: linear-gradient(353deg,#9356dc 30%, #ff79da 80%);
 }
 .recherche_restau .--sousTexte{
     text-align: center;
@@ -77,18 +78,29 @@ avec son style */
     padding-bottom: 60px;
     padding-top: 10px;
 }
+/* le text align center me sert a centrer le texte, le padding en dessous me sert pour le mettre a ras des boutons en dessous, et que sa puisse suivre responsivement */
 .fonctionnement .--texte{
     font-size: x-large; 
     font-weight: bold;
+    text-align: center;
+    padding-right: 190px;
 }
+/* j'ai rajouter le line height au bouton , pour qu'il puisse bien s'aligné */
 .fonctionnement button{
-    width: 340px;
-    height: 55px;
+    width: 360px;
+    height: 65px;
     border-radius: 15px;
     border: none;
     text-align: start;
     font-size: 14px;
     font-weight: 600;
+    background-color: #f4f4f4;
+    box-shadow: 5px 6px 15px -6px rgb(0 0 0 / 26%);
+    line-height: 5;
+    
+}
+.fonctionnement .color-purple{
+    background-color: #f1e9fb;
 }
 .icon_fonction{
     padding-right: 20px;
@@ -98,18 +110,24 @@ avec son style */
 .tout{
     width: max-content;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
+/* j'ai rajouter le margin negatif, car pour l'instant je n'ai trouvé que cette solution pour rendre le même rendu que sur maquette */
 .tout .icon-number{
     border: 1px solid;
-    padding: 6px;
+    padding: 5px 8px 5px 8px;
     border-radius: 70%;
-    /* position: absolute; */
     position: relative;
     background-color: #9356DC;
     color: white;
-    margin-top: 10px;
+    margin-right: -15px;
+    /* position: absolute; */
+    /* margin-top: 10px; */
     /* left: 0%; */
+}
+/* pour pouvoir mettre la derniere icon de la bonne couleur  */
+.icon_fonction.color{
+    color: #9356DC;
 }
 
 
@@ -184,12 +202,7 @@ un peu de padding pour bien placé l'element avec aussi du margin en %, pour le 
 }
 
 /* ici Le FOOTER */
-/* .logo-footer{
-    width: 110px;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-} */
+
 .--title{
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
@@ -234,7 +247,6 @@ footer{
 footer p{
     padding-left: 15px;
     margin: 0;
-    /* padding-bottom: 7px; */
     color: white;
     margin-bottom: 8px;
 }
