@@ -1,0 +1,41 @@
+@media screen and (min-width: 992px) {
+    nav{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 25px;
+    }
+    .fonctionnement .--texte{
+        font-size: x-large; 
+        font-weight: bold;
+        text-align: start;
+        padding-right: 0px;
+        padding-left: 25px;
+    }
+    .desktop{
+        display: flex;
+        flex-direction: row;
+    }
+    .restau-desktop{
+        display: flex;
+    /* flex-direction: row; */
+        flex-flow: wrap;
+    }
+    .restaurant-card{
+        width: 36%;
+    }
+    .nouveaute1{
+        z-index: 2;
+        position: absolute;
+        border: 1px solid transparent;
+        /* margin-left: 240px; */
+        /* margin-left: 57%; */
+        background-color: #99E2D0;
+        color: #11745c;
+        padding: 6px;
+        border-radius: 3px;
+        font-weight: 600;
+        padding-left: 15px;
+        padding-right: 15px;
+        right: 60%;
+    }
+}

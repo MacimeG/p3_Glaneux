@@ -85,6 +85,10 @@ avec son style */
     text-align: center;
     padding-right: 190px;
 }
+.desktop{
+    display: flex;
+    flex-direction: column;
+}
 /* j'ai rajouter le line height au bouton , pour qu'il puisse bien s'aligné */
 .fonctionnement button{
     width: 360px;
@@ -189,6 +193,21 @@ j'ai remplacer les pixel par le % pour que responsivement, sa se comporte mieux.
 /* ici j'ai jouer avec la propriété position et son attribut absolute, pour pouvoir placer le petit bloc "nouveau" sur la droite de la photo
 un peu de padding pour bien placé l'element avec aussi du margin en %, pour le comportement des elements par rapport au differente taille d'écran */
 .nouveaute{
+    z-index: 2;
+    position: absolute;
+    border: 1px solid transparent;
+    /* margin-left: 240px; */
+    /* margin-left: 57%; */
+    background-color: #99E2D0;
+    color: #11745c;
+    padding: 6px;
+    border-radius: 3px;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    right: 10%;
+}
+.nouveaute1{
     z-index: 2;
     position: absolute;
     border: 1px solid transparent;
