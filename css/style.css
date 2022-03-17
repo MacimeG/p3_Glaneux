@@ -61,6 +61,12 @@ avec son style */
     height: 50px;
     box-shadow: 5px 6px 15px -2px rgba(0,0,0,0.26);
     background: linear-gradient(353deg,#9356dc 30%, #ff79da 80%);
+    transition: .5s ease-out ;
+}
+/* ici je met une petite animation au survol du bouton, je l'eclaircis comme demandé et j'accentu l'ombre du bouton */
+.--bouton button:hover{
+    background: linear-gradient(353deg,#9356dc 0%, #ff79da 100%);
+    box-shadow: 5px 6px 15px 11px rgba(0,0,0,0.26);
 }
 .recherche_restau .--sousTexte{
     text-align: center;
@@ -163,6 +169,7 @@ j'ai remplacer les pixel par le % pour que responsivement, sa se comporte mieux.
     border-radius: 15px;
     height: 260px;
     margin-bottom: 20px;
+    box-shadow: 5px 6px 15px -10px rgb(0 0 0 / 26%);
 }
 
 /* les images des card prenne 100% de la largueur de la card, et ce couvre la card grace a la propriété background-size: cover */
@@ -190,8 +197,23 @@ j'ai remplacer les pixel par le % pour que responsivement, sa se comporte mieux.
     float: right;
     padding-right: 25px;
 }
+
+/* Animation pour le coeur partie restaurant la pseudoclass before fonctionne obligatoirement avec la propriété content, celle si peut rester vide. */
+.fa-heart::before {
+    content: "\f004";
+    /* font-weight: bold; */
+    transition: color .5s ease-out;
+}
+/* ici je rajoute la couleur grace a la pseudo class hover, le coeur se remplit grace a la propriété font-weight:bold */
+
+.fa-heart:hover::before{
+    /* color: red; */
+    color: rgb(147,86,220);
+    font-weight: bold;
+    cursor: pointer;
+}
 /* ici j'ai jouer avec la propriété position et son attribut absolute, pour pouvoir placer le petit bloc "nouveau" sur la droite de la photo
-un peu de padding pour bien placé l'element avec aussi du margin en %, pour le comportement des elements par rapport au differente taille d'écran */
+un peu de padding (marge exterieure) pour bien placé l'element avec aussi du margin en %, pour le comportement des elements par rapport au differente taille d'écran */
 .nouveaute{
     z-index: 2;
     position: absolute;
@@ -207,6 +229,7 @@ un peu de padding pour bien placé l'element avec aussi du margin en %, pour le 
     padding-right: 15px;
     right: 10%;
 }
+/* nouveauté 1 a les meme propriété que nouveauté, j'ai ajouté sa surtout pour la version desktop*/
 .nouveaute1{
     z-index: 2;
     position: absolute;
