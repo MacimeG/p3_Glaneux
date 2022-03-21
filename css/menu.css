@@ -1,0 +1,103 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Ici contient mon HEADER
+j'y rajoute du style avec les propriétés font, texte-align et du display:flex */
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* ici j'ai rajouté la propriété margin et son attribut auto, pour centrer automatiquement mon logo */
+.logo-header{
+    width: 210px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin: auto;
+}
+
+
+.img-menu{
+    width: 100%;
+    background-size: cover;
+}
+
+/* ici le titre, dans la section menu qui contient les plats entrees menu et dessert.
+je commence par mettre en place le titre avec le coeur et ainsi la mise en forme de la page */
+
+.menu{
+    background-color: #f1f1f1;
+    border: 1px solid transparent;
+    position: relative;
+    bottom: 55px;
+    border-radius: 45px 45px 0px 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.--title{
+    font-family: 'Shrikhand', cursive;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+/* ici le titre ainsi que l'icon du coeur, mise en place du style avec les flexblox, ainsi qu'un peu de padding */
+.title-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.title-menu{
+    font-size: large;
+    text-transform: uppercase;
+    /* padding-left: 15px; */
+    color: #5a5a5a;
+    margin-bottom: 3px;
+    font-weight: 100;
+}
+
+/* la balise hr me sert a mettre le petit train vert en dessous du titre entrée */
+hr{
+    width: 10%;
+    margin: 0px;
+    margin-left: 2px;
+    height: 2px;
+    background-color: #99E2D0;
+    border: 1px solid transparent;
+}
+/* ici je vais commencer mettre en place les boutons, ou card, des entrées. */
+.bouton{
+    border: 0px solid black;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    box-shadow: 5px 6px 15px -6px rgb(0 0 0 / 26%);
+}
+.bouton p{
+    margin: 0px;
+}
+.plat{
+    font-weight: bold;
+}
+/* cette div me sert a mettre en place comme sur la maquette, grace au flexbox */
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5px;
+}
