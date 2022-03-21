@@ -117,13 +117,13 @@ avec son style */
     padding-left: 15px;
 }
 
-.tout{
+.fonction-item{
     width: max-content;
     margin: auto;
     margin-bottom: 20px;
 }
 /* j'ai rajouter le margin negatif, car pour l'instant je n'ai trouvé que cette solution pour rendre le même rendu que sur maquette */
-.tout .icon-number{
+.fonction-item .icon-number{
     border: 1px solid;
     padding: 5px 8px 5px 8px;
     border-radius: 70%;
