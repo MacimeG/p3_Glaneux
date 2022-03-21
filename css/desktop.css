@@ -1,9 +1,9 @@
 @media screen and (min-width: 992px) {
-    nav{
+    /* nav{
         display: flex;
         justify-content: flex-start;
         padding-left: 25px;
-    }
+    } */
     .fonctionnement .--texte{
         font-size: x-large; 
         font-weight: bold;
