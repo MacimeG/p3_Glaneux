@@ -1,0 +1,12 @@
+@media screen and (min-width: 992px) {
+    .content-img{
+        height: 700px;
+    }
+    .entrer{
+        width: 50%;
+        margin: auto;
+    }
+    .title-item{
+        justify-content: space-evenly;
+    }
+}
