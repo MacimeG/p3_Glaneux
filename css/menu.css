@@ -108,6 +108,9 @@ hr{
 .entrer.menu-plat{
     padding-top: 25px;
 }
+.prix{
+    font-weight: bold;
+}
 /* ici le bouton pour commander */
 .--bouton{
     display: flex;
