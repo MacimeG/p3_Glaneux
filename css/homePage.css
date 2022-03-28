@@ -112,7 +112,8 @@ avec son style */
 }
 
 .fonctionnement .color-purple{
-    background-color: #f1e9fb;
+    /* background-color: #f1e9fb; */
+    background-color: #f4f4f4;
 }
 /* ici je m'occupe de la petite animation sur les boutons de fonctionnement grace a la pseudoclass hover pour le survol et le focus qui remplace le clic */
 .fonctionnement button:hover{
@@ -124,10 +125,12 @@ avec son style */
 
 
 .fonctionnement .color-purple:hover{
-    background-color: rgb(208, 170, 255);
+    /* background-color: rgb(208, 170, 255); */
+    background-color: #f1e9fb;
 }
 .fonctionnement .color-purple:focus{
-    background-color: rgb(208, 170, 255);
+    /* background-color: rgb(208, 170, 255); */
+    background-color: #f1e9fb;
 }
 .icon_fonction{
     padding-right: 20px;
