@@ -98,6 +98,9 @@ hr{
 .plat{
     font-weight: bold;
 }
+.prix{
+    font-weight: bold;
+}
 /* cette div me sert a mettre en place comme sur la maquette, grace au flexbox */
 .row{
     display: flex;
@@ -108,9 +111,7 @@ hr{
 .entrer.menu-plat{
     padding-top: 25px;
 }
-.prix{
-    font-weight: bold;
-}
+
 /* ici le bouton pour commander */
 .--bouton{
     display: flex;
