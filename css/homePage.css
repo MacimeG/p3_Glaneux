@@ -20,7 +20,7 @@ nav{
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
-    background-color: #f1efef;
+    background-color: #EAEAEA;
     box-shadow: -6px 20px 18px -19px rgba(100,99,99,0.75) inset;
     
 }
@@ -117,20 +117,20 @@ avec son style */
 }
 /* ici je m'occupe de la petite animation sur les boutons de fonctionnement grace a la pseudoclass hover pour le survol et le focus qui remplace le clic */
 .fonctionnement button:hover{
-    background-color: #f1e9fb;
+    background-color: #F5EDFF;
 }
 .fonctionnement button:focus{
-    background-color: #f1e9fb;
+    background-color: #F5EDFF;
 }
 
 
 .fonctionnement .color-purple:hover{
     /* background-color: rgb(208, 170, 255); */
-    background-color: #f1e9fb;
+    background-color: #F5EDFF;
 }
 .fonctionnement .color-purple:focus{
     /* background-color: rgb(208, 170, 255); */
-    background-color: #f1e9fb;
+    background-color: #F5EDFF;
 }
 .icon_fonction{
     padding-right: 20px;
@@ -331,7 +331,7 @@ footer p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: backloader linear both;
+    animation: backloader linear;
     animation-duration: 3s;
     opacity: 0;
 }
@@ -349,11 +349,12 @@ footer p{
     }
     50%{
         transform: translateY(0px);
+        height: 900px;
         opacity: 1;
     }
     100%{
         transform: translateY(-900px);
-        /* height: -900px; */
+        height: -900px;
         opacity: 0;
     }
 }
