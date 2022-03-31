@@ -105,16 +105,12 @@ avec son style */
     text-align: start;
     font-size: 14px;
     font-weight: 600;
-    background-color: #f4f4f4;
+    background-color: #f6f6f6;
     box-shadow: 5px 6px 15px -6px rgb(0 0 0 / 26%);
     line-height: 5;
     transition:  .5s ease-in-out;
 }
 
-.fonctionnement .color-purple{
-    /* background-color: #f1e9fb; */
-    background-color: #f4f4f4;
-}
 /* ici je m'occupe de la petite animation sur les boutons de fonctionnement grace a la pseudoclass hover pour le survol et le focus qui remplace le clic */
 .fonctionnement button:hover{
     background-color: #F5EDFF;
@@ -122,19 +118,14 @@ avec son style */
 .fonctionnement button:focus{
     background-color: #F5EDFF;
 }
-
-
-.fonctionnement .color-purple:hover{
-    /* background-color: rgb(208, 170, 255); */
-    background-color: #F5EDFF;
-}
-.fonctionnement .color-purple:focus{
-    /* background-color: rgb(208, 170, 255); */
-    background-color: #F5EDFF;
+/* ce petit bout de code me sert a faire changer la couleur de l'icon, dans le bouton */
+.fonctionnement button:hover .icon_fonction{
+    color: #9356DC;
 }
 .icon_fonction{
     padding-right: 20px;
     padding-left: 15px;
+    color: #7E7E7E;
 }
 
 .fonction-item{
@@ -153,13 +144,6 @@ avec son style */
     background-color: #9356DC;
     color: white;
     margin-right: -15px;
-    /* position: absolute; */
-    /* margin-top: 10px; */
-    /* left: 0%; */
-}
-/* pour pouvoir mettre la derniere icon de la bonne couleur  */
-.icon_fonction.color{
-    color: #9356DC;
 }
 
 
@@ -169,7 +153,7 @@ avec son style */
 
 /* ICI LA SECTION RESTAURANT ET CES CARD */
 .restaurant{
-    background-color: #f1f1f1;
+    background-color: #f6f6f6;
     padding-top: 20px;
     padding-bottom: 30px;
 }
@@ -177,7 +161,6 @@ avec son style */
 .restaurant .--texte{
     font-size: x-large; 
     font-weight: bold;
-    /* padding-left: 30px; */
     padding-left: 7%;
 }
 
@@ -193,7 +176,10 @@ j'ai remplacer les pixel par le % pour que responsivement, sa se comporte mieux.
     margin-bottom: 20px;
     box-shadow: 5px 6px 15px -10px rgb(0 0 0 / 26%);
 }
-
+a{
+    color: black;
+    text-decoration: none;
+}
 /* les images des card prenne 100% de la largueur de la card, et ce couvre la card grace a la propriété background-size: cover */
 .img_main{
     background-size: cover;
@@ -223,13 +209,11 @@ j'ai remplacer les pixel par le % pour que responsivement, sa se comporte mieux.
 /* Animation pour le coeur partie restaurant la pseudoclass before fonctionne obligatoirement avec la propriété content, celle si peut rester vide. */
 .fa-heart::before {
     content: "\f004";
-    /* font-weight: bold; */
     transition: color .5s ease-out;
 }
 /* ici je rajoute la couleur grace a la pseudo class hover, le coeur se remplit grace a la propriété font-weight:bold */
 
 .fa-heart:hover::before{
-    /* color: red; */
     color: rgb(147,86,220);
     font-weight: bold;
     cursor: pointer;
@@ -240,10 +224,8 @@ un peu de padding (marge exterieure) pour bien placé l'element avec aussi du ma
     z-index: 2;
     position: absolute;
     border: 1px solid transparent;
-    /* margin-left: 240px; */
-    /* margin-left: 57%; */
     background-color: #99E2D0;
-    color: #11745c;
+    color: #008766;
     padding: 6px;
     border-radius: 3px;
     font-weight: 600;
@@ -256,10 +238,8 @@ un peu de padding (marge exterieure) pour bien placé l'element avec aussi du ma
     z-index: 2;
     position: absolute;
     border: 1px solid transparent;
-    /* margin-left: 240px; */
-    /* margin-left: 57%; */
     background-color: #99E2D0;
-    color: #11745c;
+    color: #008766;
     padding: 6px;
     border-radius: 3px;
     font-weight: 600;
@@ -288,25 +268,7 @@ un peu de padding (marge exterieure) pour bien placé l'element avec aussi du ma
 .footer-propose p{
     padding-left: 20px;
 }
-/* .footer-propose i{
-    padding-left: 20px;
-} */
 
-
-/* .footer-partenaire{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 5px;
-}
-
-.footer-partenaire p{
-    padding-left: 20px;
-    margin: 0;
-}
-.footer-partenaire i{
-    padding-left: 20px;
-} */
 footer{
     background-color: #353535;
     padding-bottom: 25px;
@@ -326,35 +288,35 @@ footer p{
     position: absolute;
     z-index: 100;
     width: 100%;
-    height: -900px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: backloader linear;
+    
+    /* ici je met mon animation, je rajoute la valeurs forwards qui laisse l'élement dans son état final lors de sa derniere iteration, cela veut dire que l'élement ne reviens pas a son état initial */
+    animation: backloader linear forwards ;
     animation-duration: 3s;
     opacity: 0;
 }
 .loader img{
     animation: loader 1s linear;
-    animation-duration: 2.5s;
+    animation-duration: 3s;
 }
 
 /* ce keyframe me sers a faire partir vers le haut, la div qui contient le logo, et qui prend accessoirement toute la page. */
 @keyframes backloader {
     0%{
         transform: translateY(0px) ;
-        height: 900px;
         opacity: 1;
     }
     50%{
         transform: translateY(0px);
-        height: 900px;
         opacity: 1;
     }
     100%{
-        transform: translateY(-900px);
-        height: -900px;
+        transform: translateY(-1000px);
+        /* transition: transform 500ms ease-in-out; */
         opacity: 0;
     }
 }
