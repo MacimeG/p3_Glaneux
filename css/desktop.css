@@ -1,9 +1,4 @@
 @media screen and (min-width: 992px) {
-    /* nav{
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 25px;
-    } */
     .fonctionnement .--texte{
         font-size: x-large; 
         font-weight: bold;
@@ -11,13 +6,16 @@
         padding-right: 0px;
         padding-left: 25px;
     }
+    /* ici je réajuste la taille des boutons dans la section fonctionnement, pour que responsivement sa reponde mieux */
+    .fonctionnement button{
+        width: 305px;
+    }
     .desktop{
         display: flex;
         flex-direction: row;
     }
     .restau-desktop{
         display: flex;
-    /* flex-direction: row; */
         flex-flow: wrap;
     }
     .restaurant-card{
@@ -27,8 +25,6 @@
         z-index: 2;
         position: absolute;
         border: 1px solid transparent;
-        /* margin-left: 240px; */
-        /* margin-left: 57%; */
         background-color: #99E2D0;
         color: #11745c;
         padding: 6px;

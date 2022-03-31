@@ -26,9 +26,6 @@ a{
     margin: auto;
 }
 
-/* .content-img.page3{
-    height: 410px;
-} */
 .img-menu{
     width: 100%;
     background-size: cover;
@@ -92,6 +89,43 @@ hr{
     padding-right: 20px;
     padding-bottom: 10px;
     box-shadow: 5px 6px 15px -6px rgb(0 0 0 / 26%);
+    /* je déclare ici aussi l'animation, car ce selecteur correspond au premier bouton des sections entrer */
+    transition: transform 500ms ease-in-out;
+    animation: 1000ms ease 303.719ms 1 reverse both running slideDown;
+    /* reverse me sert a faire l'animation en reverse. et both me sert a remplir le debut et la fin de mon animation */
+}
+/* ici je rajoute un delay en selectionnant les different enfant (bouton) grace au pseudo-classe nth-last-child */
+.entrer .bouton:nth-last-child(2){
+    /* animation: slideDown 1.2s reverse both; */
+    animation: 1200ms ease 324.673ms 1 reverse both running slideDown;
+}
+.entrer .bouton:last-child{
+    /* animation: slideDown 1.4s reverse both; */
+    animation: 1400ms ease 344.511ms 1 reverse both running slideDown;
+}
+/* et ici je rajoute un delai pour les menu plat ainsi que les dessert, pour qu'il n'arrive pas tous en même temps */
+.entrer.menu-plat .bouton{
+    /* animation-delay: 1.3s; */
+    /* j'ajuste le delay grace a l'outil devtools */
+    animation-delay: 1764.8809477066711ms;
+}
+.entrer.menu-dessert .bouton{
+    /* animation-delay: 2s; */
+    animation-delay: 3010.6795358092045ms;
+}
+
+/* La keyframes me sert a faire la petite animation sur les carte, au chargement de la page.
+elle me serve a pouvoir mettre une suite de transition du debut jusqua la fin de l'animation
+Elle nous permet de créer des arrêts et des accélérations plus irréguliers*/
+@keyframes slideDown{
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
 }
 .bouton p{
     margin: 0px;
@@ -113,6 +147,9 @@ hr{
     padding-top: 25px;
 }
 
+.entrer.menu-dessert{
+    padding-top: 25px;
+}
 /* ici le bouton pour commander */
 .--bouton{
     display: flex;

@@ -12,4 +12,16 @@
     .title-item{
         justify-content: space-evenly;
     }
+    footer{
+        padding-left: 0;
+    }
+    footer p{
+        text-align: center;
+    }
+    .--title-footer{
+        text-align: center;
+    }
+    .footer-propose{
+        justify-content: center;
+    }
 }

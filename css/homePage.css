@@ -316,7 +316,6 @@ footer p{
     }
     100%{
         transform: translateY(-1000px);
-        /* transition: transform 500ms ease-in-out; */
         opacity: 0;
     }
 }
