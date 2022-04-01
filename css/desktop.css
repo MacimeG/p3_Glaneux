@@ -1,5 +1,5 @@
 @media screen and (min-width: 992px) {
-    .fonctionnement .--texte{
+    .fonctionnement .texte{
         font-size: x-large; 
         font-weight: bold;
         text-align: start;
@@ -33,6 +33,15 @@
         padding-left: 15px;
         padding-right: 15px;
         right: 60%;
+    }
+    footer p{
+        text-align: center;
+    }
+    .title-footer{
+        text-align: center;
+    }
+    .footer-propose{
+        justify-content: center;
     }
     
 }

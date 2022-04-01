@@ -46,7 +46,7 @@ main{
     padding-right: 15px;
 }
 
-.--title{
+.title{
     font-family: 'Shrikhand', cursive;
     font-size: xx-large;
     font-weight: 500;
@@ -59,6 +59,20 @@ main{
     align-items: center;
     justify-content: space-between;
     padding-right: 20px;
+}
+.fa-heart::before {
+    content: "\f004";
+    transition: color 500ms ease-in-out;
+}
+/* ici je rajoute la couleur grace a la pseudo class hover, le coeur se remplit grace a la propriété font-weight:bold */
+
+.fa-heart:hover::before{
+    /* color: rgb(147,86,220); */
+    background: -webkit-linear-gradient(200deg,#9356dc 20%, #fc72d5 80%);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    cursor: pointer;
 }
 .title-menu{
     font-size: large;
@@ -93,6 +107,13 @@ hr{
     transition: transform 500ms ease-in-out;
     animation: 1000ms ease 303.719ms 1 reverse both running slideDown;
     /* reverse me sert a faire l'animation en reverse. et both me sert a remplir le debut et la fin de mon animation */
+
+    /* ici ces propriété me serve au animation sur tout les boutons */
+    /* la valeur ellipsis, me sers a faire apparaitre les 3petit points si le texte ce faire ronger par l'encoche */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: padding-right 450ms ease-in-out;
 }
 /* ici je rajoute un delay en selectionnant les different enfant (bouton) grace au pseudo-classe nth-last-child */
 .entrer .bouton:nth-last-child(2){
@@ -129,13 +150,14 @@ Elle nous permet de créer des arrêts et des accélérations plus irréguliers*
 }
 .bouton p{
     margin: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .plat{
     font-weight: bold;
 }
-.prix{
-    font-weight: bold;
-}
+
 /* cette div me sert a mettre en place comme sur la maquette, grace au flexbox */
 .row{
     display: flex;
@@ -151,13 +173,13 @@ Elle nous permet de créer des arrêts et des accélérations plus irréguliers*
     padding-top: 25px;
 }
 /* ici le bouton pour commander */
-.--bouton{
+._bouton{
     display: flex;
     /* flex-direction: row; */
     justify-content: center;
     padding-top: 45px;
 }
-.--bouton button{
+._bouton button{
     border: none;
     color: white;
     border-radius: 25px;
@@ -166,12 +188,16 @@ Elle nous permet de créer des arrêts et des accélérations plus irréguliers*
     height: 50px;
     box-shadow: 5px 6px 15px -2px rgba(0,0,0,0.26);
     background: linear-gradient(353deg,#9356dc 30%, #ff79da 80%);
-    /* transition: .5s ease-out ; */
+    transition: .5s ease-out ;
     cursor: pointer;
+}
+._bouton button:hover{
+    background: linear-gradient(353deg,#9356dc 0%, #ff85dc 100%);
+    box-shadow: 5px 6px 15px 11px rgba(0,0,0,0.26);
 }
 
 /* ici le footer, comme pour la page d'accueil */
-.--title-footer{
+.title-footer{
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
     /* padding-left: 20px; */
@@ -200,3 +226,34 @@ footer p{
     color: white;
     margin-bottom: 8px;
 }
+/* ici je met en place l'élement qui vas me servir a faire l'animation sur les boutons */
+.bouton:hover{
+    padding-right: 80px;
+}
+.bouton:hover .anim {
+    opacity: 1;
+    transform: translate(-50px);
+  }
+  .bouton:hover .fa-circle-check {
+    transform: rotate(360deg);
+  }
+.anim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    width: 30px;
+    height: 24px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 20px;
+    right: -50px;
+    top: 0;
+    opacity: 0;
+    transition: transform 330ms ease-in-out;
+  }
+  .anim .fa-circle-check {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
+  }

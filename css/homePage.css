@@ -24,7 +24,7 @@ nav{
     box-shadow: -6px 20px 18px -19px rgba(100,99,99,0.75) inset;
     
 }
-.recherche_ville .--texte{
+.recherche_ville .texte{
     font-weight: 600;
     color: #454545;
 }
@@ -38,7 +38,7 @@ nav{
 }
 
 /* J'ai centrer le texte comme sur la maquette en ajouter la propriéte width:60% ainsi que la propriété margin: auto, pour pouvoir le centrer automatiquement */
-.recherche_restau .--texte{
+.recherche_restau .texte{
     font-size: x-large; 
     font-weight: bold;
     text-align: center;
@@ -46,13 +46,13 @@ nav{
     margin: auto;
     padding-top: 35px;
 }
-.recherche_restau .--bouton{
+.recherche_restau .bouton{
     display: flex;
     justify-content: center;
 }
 /* J'ai mis une taille et hauteur fixe en pixel sur le bouton
 avec son style */
-.--bouton button{
+.bouton button{
     border: none;
     color: white;
     border-radius: 25px;
@@ -65,11 +65,11 @@ avec son style */
     cursor: pointer;
 }
 /* ici je met une petite animation au survol du bouton, je l'eclaircis comme demandé et j'accentu l'ombre du bouton */
-.--bouton button:hover{
-    background: linear-gradient(353deg,#9356dc 0%, #ff79da 100%);
+.bouton button:hover{
+    background: linear-gradient(353deg,#9356dc 0%, #ff85dc 100%);
     box-shadow: 5px 6px 15px 11px rgba(0,0,0,0.26);
 }
-.recherche_restau .--sousTexte{
+.recherche_restau .sousTexte{
     text-align: center;
     font-size: larger;
 }
@@ -86,7 +86,7 @@ avec son style */
     padding-top: 10px;
 }
 /* le text align center me sert a centrer le texte, le padding en dessous me sert pour le mettre a ras des boutons en dessous, et que sa puisse suivre responsivement */
-.fonctionnement .--texte{
+.fonctionnement .texte{
     font-size: x-large; 
     font-weight: bold;
     text-align: center;
@@ -158,7 +158,7 @@ avec son style */
     padding-bottom: 30px;
 }
 /* ici je met le padding en % pour avoir le meme espace entre le bord et le commencement des card et tu titre restaurant, et que se soit responsive */
-.restaurant .--texte{
+.restaurant .texte{
     font-size: x-large; 
     font-weight: bold;
     padding-left: 7%;
@@ -209,12 +209,15 @@ a{
 /* Animation pour le coeur partie restaurant la pseudoclass before fonctionne obligatoirement avec la propriété content, celle si peut rester vide. */
 .fa-heart::before {
     content: "\f004";
-    transition: color .5s ease-out;
+    transition: color 500ms ease-in-out;
 }
 /* ici je rajoute la couleur grace a la pseudo class hover, le coeur se remplit grace a la propriété font-weight:bold */
 
 .fa-heart:hover::before{
-    color: rgb(147,86,220);
+    /* color: rgb(147,86,220); */
+    background: -webkit-linear-gradient(200deg,#9356dc 20%, #fc72d5 80%);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
     font-weight: bold;
     cursor: pointer;
 }
@@ -250,7 +253,7 @@ un peu de padding (marge exterieure) pour bien placé l'element avec aussi du ma
 
 /* ici Le FOOTER */
 
-.--title{
+.title-footer{
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
     /* padding-left: 20px; */
