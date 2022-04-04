@@ -151,6 +151,7 @@ Elle nous permet de créer des arrêts et des accélérations plus irréguliers*
 /* ici je met en place l'élement qui vas me servir a faire l'animation sur les boutons */
 .bouton:hover{
     padding-right: 80px;
+    cursor: pointer;
 }
 .bouton:hover .anim {
     opacity: 1;
