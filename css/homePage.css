@@ -114,6 +114,7 @@ avec son style */
 /* ici je m'occupe de la petite animation sur les boutons de fonctionnement grace a la pseudoclass hover pour le survol et le focus qui remplace le clic */
 .fonctionnement button:hover{
     background-color: #F5EDFF;
+    cursor: pointer;
 }
 .fonctionnement button:focus{
     background-color: #F5EDFF;
