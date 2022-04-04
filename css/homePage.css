@@ -219,6 +219,7 @@ a{
     background: -webkit-linear-gradient(200deg,#9356dc 20%, #fc72d5 80%);
     -webkit-text-fill-color:transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     font-weight: bold;
     cursor: pointer;
 }
