@@ -223,15 +223,6 @@ a{
     font-weight: bold;
     cursor: pointer;
 }
-.fa-heart:focus::before{
-    /* color: rgb(147,86,220); */
-    background: -webkit-linear-gradient(200deg,#9356dc 20%, #fc72d5 80%);
-    -webkit-text-fill-color:transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-weight: bold;
-    cursor: pointer;
-}
 /* ici j'ai jouer avec la propriété position et son attribut absolute, pour pouvoir placer le petit bloc "nouveau" sur la droite de la photo
 un peu de padding (marge exterieure) pour bien placé l'element avec aussi du margin en %, pour le comportement des elements par rapport au differente taille d'écran */
 .nouveaute{
