@@ -161,17 +161,6 @@ Elle nous permet de créer des arrêts et des accélérations plus irréguliers*
   .bouton:hover .fa-circle-check {
     transform: rotate(360deg);
   }
-.bouton:focus{
-    padding-right: 80px;
-    cursor: pointer;
-}
-.bouton:focus .anim {
-    opacity: 1;
-    transform: translate(-50px);
-  }
-  .bouton:focus .fa-circle-check {
-    transform: rotate(360deg);
-  }
 .anim {
     display: flex;
     justify-content: center;
