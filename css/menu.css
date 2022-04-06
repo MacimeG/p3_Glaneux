@@ -223,6 +223,7 @@ Elle nous permet de créer des arrêts et des accélérations plus irréguliers*
     background: linear-gradient(353deg,#9356dc 30%, #ff79da 80%);
     transition: .5s ease-out ;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 ._bouton button:hover{
     background: linear-gradient(353deg,#9356dc 0%, #ff85dc 100%);
