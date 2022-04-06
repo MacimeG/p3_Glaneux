@@ -105,7 +105,6 @@ hr{
     padding-bottom: 10px;
     box-shadow: 5px 6px 15px -6px rgb(0 0 0 / 26%);
     /* je déclare ici aussi l'animation, car ce selecteur correspond au premier bouton des sections entrer */
-    transition: transform 500ms ease-in-out;
     animation: 1000ms ease 303.719ms 1 reverse both running slideDown;
     /* reverse me sert a faire l'animation en reverse. et both me sert a remplir le debut et la fin de mon animation */
 
