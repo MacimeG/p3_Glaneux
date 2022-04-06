@@ -145,7 +145,7 @@ Elle nous permet de créer des arrêts et des accélérations plus irréguliers*
         opacity: 1;
     }
     100%{
-        transform: translateY(30px);
+        transform: translateY(15px);
         opacity: 0;
     }
 }
