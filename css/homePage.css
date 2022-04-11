@@ -210,19 +210,47 @@ a{
 /* Animation pour le coeur partie restaurant la pseudoclass before fonctionne obligatoirement avec la propriété content, celle si peut rester vide. */
 .fa-heart::before {
     content: "\f004";
-    transition: color 500ms ease-in-out;
 }
 /* ici je rajoute la couleur grace a la pseudo class hover, le coeur se remplit grace a la propriété font-weight:bold */
 
 .fa-heart:hover::before{
-    /* color: rgb(147,86,220); */
+    animation: fill 300ms ease-in-out;
+    /* transition: 300ms ease-in-out; */
     background: -webkit-linear-gradient(200deg,#9356dc 20%, #fc72d5 80%);
     -webkit-text-fill-color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-weight: bold;
     cursor: pointer;
+    font-weight: bold;
+    
 }
+
+@keyframes fill {
+    0%{
+        /* opacity: 0.5; */
+        /* background: -webkit-linear-gradient(200deg,#e8d5ff 20%, #fdc2ed 80%); */
+        background: -webkit-linear-gradient(200deg,#fefefe 20%, #fdc2ed 80%);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    50%{
+        /* opacity: 0.7; */
+        background: -webkit-linear-gradient(200deg,#ceb1f2 20%, #fface7 80%);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    100%{
+        /* opacity: 1; */
+        background: -webkit-linear-gradient(200deg,#9356dc 20%, #fc72d5 80%);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+
 /* ici j'ai jouer avec la propriété position et son attribut absolute, pour pouvoir placer le petit bloc "nouveau" sur la droite de la photo
 un peu de padding (marge exterieure) pour bien placé l'element avec aussi du margin en %, pour le comportement des elements par rapport au differente taille d'écran */
 .nouveaute{

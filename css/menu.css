@@ -60,19 +60,42 @@ main{
     justify-content: space-between;
     padding-right: 20px;
 }
+/* Animation pour le coeur partie restaurant la pseudoclass before fonctionne obligatoirement avec la propriété content, celle si peut rester vide. */
 .fa-heart::before {
     content: "\f004";
 }
 /* ici je rajoute la couleur grace a la pseudo class hover, le coeur se remplit grace a la propriété font-weight:bold */
 
 .fa-heart:hover::before{
-    /* color: rgb(147,86,220); */
+    animation: fill 300ms ease-in-out;
     background: -webkit-linear-gradient(200deg,#9356dc 20%, #fc72d5 80%);
     -webkit-text-fill-color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-weight: bold;
     cursor: pointer;
+    font-weight: bold;
+    
+}
+
+@keyframes fill {
+    0%{
+        background: -webkit-linear-gradient(200deg,#fefefe 20%, #fdc2ed 80%);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    50%{
+        background: -webkit-linear-gradient(200deg,#ceb1f2 20%, #fface7 80%);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    100%{
+        background: -webkit-linear-gradient(200deg,#9356dc 20%, #fc72d5 80%);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
 }
 .title-menu{
     font-size: large;
